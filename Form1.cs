@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace SelvrappoteringsApp
 {
@@ -20,7 +21,9 @@ namespace SelvrappoteringsApp
             InitializeComponent();
             _indstillinger = new Indstillinger(this);
             _loginForm = new Login(this, _indstillinger);
-            LydB.Visible = false;
+            LydlosB.Visible = false;
+
+            //LydB.Visible = false;
 
             //_loginForm.Visible = false;
             //_indstillinger.Visible = false;
@@ -52,6 +55,8 @@ namespace SelvrappoteringsApp
             else
             {
                 SimpelReminderTimer.Stop();
+                _SimpelCounter = 0;
+                _threshold = 5;
             }
 
             if (maaler)
@@ -104,12 +109,33 @@ namespace SelvrappoteringsApp
         {
             LydB.Visible = false;
             LydlosB.Visible = true;
+            lyd = false;
+
+
+        }
+
+        private bool lyd = true;
+
+
+        private void LydBeep()
+        {
+            if (lyd)
+            {
+                Console.Beep(700, 400);
+                Console.Beep(500, 700);
+            }
+            else
+            {
+                
+            }
         }
 
         private void LydlosB_Click(object sender, EventArgs e)
         {
             LydlosB.Visible = false;
             LydB.Visible = true;
+
+            lyd = true;
         }
 
         private int _SimpelCounter = 0;
@@ -122,12 +148,15 @@ namespace SelvrappoteringsApp
             if (_SimpelCounter == _threshold)
             {
                 _threshold += 5;
-                ReminderTB.Visible = true;
-                ReminderTB.Text = "Der er gået " + _SimpelCounter + "sekunder - Husk at rappoter!";
+
+                LydBeep();
+
+                //ReminderTB.Visible = true;
+                //ReminderTB.Text = "Der er gået " + _SimpelCounter + "sekunder - Husk at rappoter!";
             }
             else if (_SimpelCounter <= _threshold-2)
             {
-                ReminderTB.Visible = false;
+                //ReminderTB.Visible = false;
             }
 
         }

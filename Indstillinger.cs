@@ -53,6 +53,7 @@ namespace SelvrappoteringsApp
         private void AfslutMaalingB_Click(object sender, EventArgs e)
         {
             _Maaler = false;
+            _SimpelReminder = false;
             NyMaalingB.Enabled = true;
             AfslutMaalingB.Enabled = false;
             _form1.EnableButtons(_Maaler, _SimpelReminder);

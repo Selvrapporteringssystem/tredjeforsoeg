@@ -45,7 +45,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LydB = new System.Windows.Forms.Button();
             this.SimpelReminderTimer = new System.Windows.Forms.Timer(this.components);
-            this.ReminderTB = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // SpiseB
@@ -249,22 +248,11 @@
             this.SimpelReminderTimer.Interval = 1000;
             this.SimpelReminderTimer.Tick += new System.EventHandler(this.SimpelReminderTimer_Tick);
             // 
-            // ReminderTB
-            // 
-            this.ReminderTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReminderTB.Location = new System.Drawing.Point(151, 159);
-            this.ReminderTB.Multiline = true;
-            this.ReminderTB.Name = "ReminderTB";
-            this.ReminderTB.Size = new System.Drawing.Size(398, 148);
-            this.ReminderTB.TabIndex = 14;
-            this.ReminderTB.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ReminderTB);
             this.Controls.Add(this.LydB);
             this.Controls.Add(this.LydlosB);
             this.Controls.Add(this.IndstillingerB);
@@ -305,7 +293,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button LydB;
         private System.Windows.Forms.Timer SimpelReminderTimer;
-        private System.Windows.Forms.TextBox ReminderTB;
     }
 }
 
