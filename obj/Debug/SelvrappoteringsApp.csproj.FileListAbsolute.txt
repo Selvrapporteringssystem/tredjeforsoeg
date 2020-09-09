@@ -1,0 +1,12 @@
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\bin\Debug\SelvrappoteringsApp.exe.config
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\bin\Debug\SelvrappoteringsApp.exe
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\bin\Debug\SelvrappoteringsApp.pdb
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.csprojAssemblyReference.cache
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.Form1.resources
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.Login.resources
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.Properties.Resources.resources
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.csproj.GenerateResource.cache
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.csproj.CoreCompileInputs.cache
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.exe
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.pdb
+C:\Users\ander\Desktop\Praktik\SelvrappoteringsApp\obj\Debug\SelvrappoteringsApp.Indstillinger.resources
