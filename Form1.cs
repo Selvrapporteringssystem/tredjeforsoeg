@@ -57,7 +57,7 @@ namespace SelvrappoteringsApp
             else
             {
                 SimpelReminderTimer.Stop();
-                _SimpelCounter = 0;
+                _simpelCounter = 0;
                 _threshold = 5;
             }
 
@@ -142,14 +142,14 @@ namespace SelvrappoteringsApp
             lyd = true;
         }
 
-        private int _SimpelCounter = 0;
+        private int _simpelCounter = 0;
         private int _threshold = 5;
 
         private void SimpelReminderTimer_Tick(object sender, EventArgs e)
         {
-            _SimpelCounter++;
+            _simpelCounter++;
 
-            if (_SimpelCounter == _threshold)
+            if (_simpelCounter == _threshold)
             {
                 _threshold += 5;
 
@@ -158,16 +158,61 @@ namespace SelvrappoteringsApp
                 //ReminderTB.Visible = true;
                 //ReminderTB.Text = "Der er gået " + _SimpelCounter + "sekunder - Husk at rappoter!";
             }
-            else if (_SimpelCounter <= _threshold-2)
+            else if (_simpelCounter <= _threshold-2)
             {
                 //ReminderTB.Visible = false;
             }
 
+            if (_andetState)
+            {
+                AndetB.BackColor = Color.LightGray;
+                AndetB.Enabled = false;
+
+                if (_simpelCounter == o)
+                {
+                    AndetB.Enabled = true;
+                    AndetB.BackColor = Color.PaleTurquoise;
+                    _andetState = false;
+                }
+            }
         }
 
         private void SpiseB_Click(object sender, EventArgs e)
         {
 
         }
-    }
+
+        private List<string> _AktivitetsList = new List<string>();
+
+        private int o = 0;
+        private bool _andetState = false;
+
+        private void AndetB_Click(object sender, EventArgs e)
+        {
+            //Kode for at gemme i en fil:
+            File.AppendAllText("..\\Aktivitetslog.txt", "Andet " + "; Date;" + DateTime.Now + "\n");
+
+            o = _simpelCounter + 3;
+            _andetState = true;
+
+
+            // Hvis vi vil hente data:
+
+                //    string inputRecord;
+                //    string[] inputFields;
+
+                //    FileStream input = new FileStream("..\\Aktivitetslog.txt", FileMode.Open, FileAccess.Read);
+                //    StreamReader fileReader = new StreamReader(input);
+
+                //    while ((inputRecord = fileReader.ReadLine()) != null)
+                //    {
+                //        inputFields = inputRecord.Split(';');
+
+                //        _AktivitetsList.Add(inputFields[1]);
+                //    }
+                //    fileReader.Close();
+                //}
+
+        }
+        }
 }
