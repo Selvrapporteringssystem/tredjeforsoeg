@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace SelvrappoteringsApp
     {
         private Login _loginForm;
         private Indstillinger _indstillinger;
+        private SoundPlayer _player;
 
         public Form1()
         {
@@ -27,6 +29,7 @@ namespace SelvrappoteringsApp
 
             //_loginForm.Visible = false;
             //_indstillinger.Visible = false;
+            _player = new SoundPlayer();
 
         }
 
@@ -110,7 +113,7 @@ namespace SelvrappoteringsApp
             LydB.Visible = false;
             LydlosB.Visible = true;
             lyd = false;
-
+            
 
         }
 
@@ -121,8 +124,8 @@ namespace SelvrappoteringsApp
         {
             if (lyd)
             {
-                Console.Beep(700, 400);
-                Console.Beep(500, 700);
+                //Console.Beep(700, 400);
+                //Console.Beep(500, 700);
             }
             else
             {
