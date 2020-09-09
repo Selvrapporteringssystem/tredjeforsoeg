@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Media;
+using System.IO;
 
 namespace SelvrappoteringsApp
 {
@@ -116,13 +118,15 @@ namespace SelvrappoteringsApp
 
         private bool lyd = true;
 
-
+        SoundPlayer sound = new SoundPlayer("..\\A-Tone-His_Self-1266414414.wav");
         private void LydBeep()
         {
             if (lyd)
             {
-                Console.Beep(700, 400);
-                Console.Beep(500, 700);
+                //Console.Beep(700, 400);
+                //Console.Beep(500, 700);
+                sound.PlaySync();
+                sound.PlaySync();
             }
             else
             {
@@ -158,6 +162,11 @@ namespace SelvrappoteringsApp
             {
                 //ReminderTB.Visible = false;
             }
+
+        }
+
+        private void SpiseB_Click(object sender, EventArgs e)
+        {
 
         }
     }

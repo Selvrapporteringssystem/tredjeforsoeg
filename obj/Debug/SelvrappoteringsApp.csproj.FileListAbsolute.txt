@@ -22,3 +22,15 @@ C:\Users\ander\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\Selv
 C:\Users\ander\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.csproj.CoreCompileInputs.cache
 C:\Users\ander\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.exe
 C:\Users\ander\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.pdb
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\bin\Debug\SelvrappoteringsApp.exe.config
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\bin\Debug\SelvrappoteringsApp.exe
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\bin\Debug\SelvrappoteringsApp.pdb
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.csprojAssemblyReference.cache
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.Form1.resources
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.Indstillinger.resources
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.Login.resources
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.Properties.Resources.resources
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.csproj.GenerateResource.cache
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.csproj.CoreCompileInputs.cache
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.exe
+C:\Users\macbook\Source\Repos\Selvrapporteringssystem\tredjeforsoeg\obj\Debug\SelvrappoteringsApp.pdb
