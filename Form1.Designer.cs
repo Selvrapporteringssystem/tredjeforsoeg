@@ -56,7 +56,7 @@
             this.SpiseB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SpiseB.Image = ((System.Drawing.Image)(resources.GetObject("SpiseB.Image")));
             this.SpiseB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.SpiseB.Location = new System.Drawing.Point(67, 58);
+            this.SpiseB.Location = new System.Drawing.Point(171, 98);
             this.SpiseB.Margin = new System.Windows.Forms.Padding(2);
             this.SpiseB.Name = "SpiseB";
             this.SpiseB.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -74,7 +74,7 @@
             this.SoveB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SoveB.Image = ((System.Drawing.Image)(resources.GetObject("SoveB.Image")));
             this.SoveB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.SoveB.Location = new System.Drawing.Point(67, 153);
+            this.SoveB.Location = new System.Drawing.Point(171, 193);
             this.SoveB.Margin = new System.Windows.Forms.Padding(2);
             this.SoveB.Name = "SoveB";
             this.SoveB.Size = new System.Drawing.Size(142, 84);
@@ -90,7 +90,7 @@
             this.ToiletB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToiletB.Image = ((System.Drawing.Image)(resources.GetObject("ToiletB.Image")));
             this.ToiletB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ToiletB.Location = new System.Drawing.Point(67, 251);
+            this.ToiletB.Location = new System.Drawing.Point(171, 291);
             this.ToiletB.Margin = new System.Windows.Forms.Padding(2);
             this.ToiletB.Name = "ToiletB";
             this.ToiletB.Size = new System.Drawing.Size(142, 84);
@@ -106,7 +106,7 @@
             this.MedicinB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MedicinB.Image = ((System.Drawing.Image)(resources.GetObject("MedicinB.Image")));
             this.MedicinB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.MedicinB.Location = new System.Drawing.Point(223, 251);
+            this.MedicinB.Location = new System.Drawing.Point(327, 291);
             this.MedicinB.Margin = new System.Windows.Forms.Padding(2);
             this.MedicinB.Name = "MedicinB";
             this.MedicinB.Size = new System.Drawing.Size(142, 84);
@@ -122,7 +122,7 @@
             this.AktivB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AktivB.Image = ((System.Drawing.Image)(resources.GetObject("AktivB.Image")));
             this.AktivB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.AktivB.Location = new System.Drawing.Point(223, 153);
+            this.AktivB.Location = new System.Drawing.Point(327, 193);
             this.AktivB.Margin = new System.Windows.Forms.Padding(2);
             this.AktivB.Name = "AktivB";
             this.AktivB.Size = new System.Drawing.Size(142, 84);
@@ -138,7 +138,7 @@
             this.SlappeAfB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SlappeAfB.Image = ((System.Drawing.Image)(resources.GetObject("SlappeAfB.Image")));
             this.SlappeAfB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.SlappeAfB.Location = new System.Drawing.Point(223, 58);
+            this.SlappeAfB.Location = new System.Drawing.Point(327, 98);
             this.SlappeAfB.Margin = new System.Windows.Forms.Padding(2);
             this.SlappeAfB.Name = "SlappeAfB";
             this.SlappeAfB.Size = new System.Drawing.Size(142, 84);
@@ -154,7 +154,7 @@
             this.PositionsskiftB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PositionsskiftB.Image = ((System.Drawing.Image)(resources.GetObject("PositionsskiftB.Image")));
             this.PositionsskiftB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.PositionsskiftB.Location = new System.Drawing.Point(378, 58);
+            this.PositionsskiftB.Location = new System.Drawing.Point(482, 98);
             this.PositionsskiftB.Margin = new System.Windows.Forms.Padding(2);
             this.PositionsskiftB.Name = "PositionsskiftB";
             this.PositionsskiftB.Size = new System.Drawing.Size(142, 84);
@@ -170,7 +170,7 @@
             this.KoncentrationB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KoncentrationB.Image = ((System.Drawing.Image)(resources.GetObject("KoncentrationB.Image")));
             this.KoncentrationB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.KoncentrationB.Location = new System.Drawing.Point(378, 153);
+            this.KoncentrationB.Location = new System.Drawing.Point(482, 193);
             this.KoncentrationB.Margin = new System.Windows.Forms.Padding(2);
             this.KoncentrationB.Name = "KoncentrationB";
             this.KoncentrationB.Size = new System.Drawing.Size(142, 84);
@@ -186,7 +186,7 @@
             this.AndetB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AndetB.Image = ((System.Drawing.Image)(resources.GetObject("AndetB.Image")));
             this.AndetB.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.AndetB.Location = new System.Drawing.Point(378, 251);
+            this.AndetB.Location = new System.Drawing.Point(482, 291);
             this.AndetB.Margin = new System.Windows.Forms.Padding(2);
             this.AndetB.Name = "AndetB";
             this.AndetB.Size = new System.Drawing.Size(142, 84);
@@ -203,7 +203,7 @@
             this.BatteriB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BatteriB.FlatAppearance.BorderSize = 0;
             this.BatteriB.Image = ((System.Drawing.Image)(resources.GetObject("BatteriB.Image")));
-            this.BatteriB.Location = new System.Drawing.Point(528, 73);
+            this.BatteriB.Location = new System.Drawing.Point(632, 113);
             this.BatteriB.Margin = new System.Windows.Forms.Padding(2);
             this.BatteriB.Name = "BatteriB";
             this.BatteriB.Size = new System.Drawing.Size(58, 57);
@@ -215,7 +215,7 @@
             // 
             this.IndstillingerB.BackColor = System.Drawing.Color.MediumTurquoise;
             this.IndstillingerB.Image = ((System.Drawing.Image)(resources.GetObject("IndstillingerB.Image")));
-            this.IndstillingerB.Location = new System.Drawing.Point(528, 165);
+            this.IndstillingerB.Location = new System.Drawing.Point(632, 205);
             this.IndstillingerB.Margin = new System.Windows.Forms.Padding(2);
             this.IndstillingerB.Name = "IndstillingerB";
             this.IndstillingerB.Size = new System.Drawing.Size(58, 57);
@@ -227,7 +227,7 @@
             // 
             this.LydlosB.BackColor = System.Drawing.Color.MediumTurquoise;
             this.LydlosB.Image = ((System.Drawing.Image)(resources.GetObject("LydlosB.Image")));
-            this.LydlosB.Location = new System.Drawing.Point(528, 259);
+            this.LydlosB.Location = new System.Drawing.Point(632, 299);
             this.LydlosB.Margin = new System.Windows.Forms.Padding(2);
             this.LydlosB.Name = "LydlosB";
             this.LydlosB.Size = new System.Drawing.Size(58, 57);
@@ -239,7 +239,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.DarkGray;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(524, 58);
+            this.textBox1.Location = new System.Drawing.Point(628, 98);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -251,7 +251,7 @@
             // 
             this.LydB.BackColor = System.Drawing.Color.MediumTurquoise;
             this.LydB.Image = ((System.Drawing.Image)(resources.GetObject("LydB.Image")));
-            this.LydB.Location = new System.Drawing.Point(528, 259);
+            this.LydB.Location = new System.Drawing.Point(632, 299);
             this.LydB.Margin = new System.Windows.Forms.Padding(2);
             this.LydB.Name = "LydB";
             this.LydB.Size = new System.Drawing.Size(58, 57);

@@ -123,8 +123,8 @@ namespace SelvrappoteringsApp
         {
             if (lyd)
             {
-                sound.Play();
-                sound.Play();
+                sound.PlaySync();
+                sound.PlaySync();
             }
             else
             {
