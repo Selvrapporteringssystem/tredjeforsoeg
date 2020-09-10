@@ -118,15 +118,13 @@ namespace SelvrappoteringsApp
 
         private bool lyd = true;
 
-        SoundPlayer sound = new SoundPlayer("..\\A-Tone-His_Self-1266414414.wav");
+        SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
         private void LydBeep()
         {
             if (lyd)
             {
-                //Console.Beep(700, 400);
-                //Console.Beep(500, 700);
-                sound.PlaySync();
-                sound.PlaySync();
+                sound.Play();
+                sound.Play();
             }
             else
             {
@@ -190,7 +188,7 @@ namespace SelvrappoteringsApp
         private void AndetB_Click(object sender, EventArgs e)
         {
             //Kode for at gemme i en fil:
-            File.AppendAllText("..\\Aktivitetslog.txt", "Andet " + "; Date;" + DateTime.Now + "\n");
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Andet " + "; Date;" + DateTime.Now + "\n");
 
             o = _simpelCounter + 3;
             _andetState = true;

@@ -37,15 +37,17 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(595, 328);
+            this.button1.Location = new System.Drawing.Point(397, 213);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 93);
+            this.button1.Size = new System.Drawing.Size(113, 60);
             this.button1.TabIndex = 0;
             this.button1.Text = "Luk";
             this.button1.UseVisualStyleBackColor = true;
@@ -54,9 +56,10 @@
             // NyMaalingB
             // 
             this.NyMaalingB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NyMaalingB.Location = new System.Drawing.Point(66, 194);
+            this.NyMaalingB.Location = new System.Drawing.Point(44, 126);
+            this.NyMaalingB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NyMaalingB.Name = "NyMaalingB";
-            this.NyMaalingB.Size = new System.Drawing.Size(170, 93);
+            this.NyMaalingB.Size = new System.Drawing.Size(113, 60);
             this.NyMaalingB.TabIndex = 1;
             this.NyMaalingB.Text = "Ny måling";
             this.NyMaalingB.UseVisualStyleBackColor = true;
@@ -66,9 +69,10 @@
             // 
             this.AfslutMaalingB.Enabled = false;
             this.AfslutMaalingB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AfslutMaalingB.Location = new System.Drawing.Point(66, 69);
+            this.AfslutMaalingB.Location = new System.Drawing.Point(44, 45);
+            this.AfslutMaalingB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AfslutMaalingB.Name = "AfslutMaalingB";
-            this.AfslutMaalingB.Size = new System.Drawing.Size(170, 93);
+            this.AfslutMaalingB.Size = new System.Drawing.Size(113, 60);
             this.AfslutMaalingB.TabIndex = 2;
             this.AfslutMaalingB.Text = "Afslut måling";
             this.AfslutMaalingB.UseVisualStyleBackColor = true;
@@ -78,7 +82,8 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(383, 92);
+            this.radioButton1.Location = new System.Drawing.Point(11, 32);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(58, 29);
             this.radioButton1.TabIndex = 3;
@@ -90,7 +95,8 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(383, 123);
+            this.radioButton2.Location = new System.Drawing.Point(255, 80);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(66, 29);
             this.radioButton2.TabIndex = 4;
@@ -100,10 +106,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(366, 64);
+            this.groupBox1.Location = new System.Drawing.Point(244, 11);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(262, 96);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(241, 93);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Smart Reminder";
@@ -113,9 +122,11 @@
             this.groupBox2.Controls.Add(this.radioButton4);
             this.groupBox2.Controls.Add(this.radioButton3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(366, 182);
+            this.groupBox2.Location = new System.Drawing.Point(244, 108);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(262, 105);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(241, 101);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Simple Reminder";
@@ -124,7 +135,8 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(17, 64);
+            this.radioButton4.Location = new System.Drawing.Point(11, 68);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(66, 29);
             this.radioButton4.TabIndex = 1;
@@ -136,7 +148,8 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(17, 34);
+            this.radioButton3.Location = new System.Drawing.Point(11, 35);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(58, 29);
             this.radioButton3.TabIndex = 0;
@@ -146,20 +159,24 @@
             // 
             // Indstillinger
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.AfslutMaalingB);
             this.Controls.Add(this.NyMaalingB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Indstillinger";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Indstillinger";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
