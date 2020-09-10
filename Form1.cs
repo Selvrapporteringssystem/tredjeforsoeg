@@ -113,6 +113,7 @@ namespace SelvrappoteringsApp
             LydlosB.Visible = true;
             lyd = false;
 
+            
 
         }
 
@@ -213,5 +214,5 @@ namespace SelvrappoteringsApp
                 //}
 
         }
-        }
+    }
 }
