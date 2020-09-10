@@ -80,6 +80,7 @@
             this.SoveB.Text = "Sove";
             this.SoveB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SoveB.UseVisualStyleBackColor = false;
+            this.SoveB.Click += new System.EventHandler(this.SoveB_Click);
             // 
             // ToiletB
             // 
@@ -95,6 +96,7 @@
             this.ToiletB.Text = "Toilet";
             this.ToiletB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ToiletB.UseVisualStyleBackColor = false;
+            this.ToiletB.Click += new System.EventHandler(this.ToiletB_Click);
             // 
             // MedicinB
             // 
@@ -110,6 +112,7 @@
             this.MedicinB.Text = "Medicin";
             this.MedicinB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.MedicinB.UseVisualStyleBackColor = false;
+            this.MedicinB.Click += new System.EventHandler(this.MedicinB_Click);
             // 
             // AktivB
             // 
@@ -125,6 +128,7 @@
             this.AktivB.Text = "Aktiv";
             this.AktivB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.AktivB.UseVisualStyleBackColor = false;
+            this.AktivB.Click += new System.EventHandler(this.AktivB_Click);
             // 
             // SlappeAfB
             // 
@@ -140,6 +144,7 @@
             this.SlappeAfB.Text = "Slappe af";
             this.SlappeAfB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SlappeAfB.UseVisualStyleBackColor = false;
+            this.SlappeAfB.Click += new System.EventHandler(this.SlappeAfB_Click);
             // 
             // PositionsskiftB
             // 
@@ -155,6 +160,7 @@
             this.PositionsskiftB.Text = "Positionsskift";
             this.PositionsskiftB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.PositionsskiftB.UseVisualStyleBackColor = false;
+            this.PositionsskiftB.Click += new System.EventHandler(this.PositionsskiftB_Click);
             // 
             // KoncentrationB
             // 
@@ -170,6 +176,7 @@
             this.KoncentrationB.Text = "Koncentration";
             this.KoncentrationB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.KoncentrationB.UseVisualStyleBackColor = false;
+            this.KoncentrationB.Click += new System.EventHandler(this.KoncentrationB_Click);
             // 
             // AndetB
             // 
@@ -247,7 +254,6 @@
             // 
             // SimpelReminderTimer
             // 
-            this.SimpelReminderTimer.Interval = 1000;
             this.SimpelReminderTimer.Tick += new System.EventHandler(this.SimpelReminderTimer_Tick);
             // 
             // Form1

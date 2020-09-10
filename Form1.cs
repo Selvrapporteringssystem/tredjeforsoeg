@@ -119,12 +119,13 @@ namespace SelvrappoteringsApp
 
         private bool lyd = true;
 
-        SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
+        private SoundPlayer sound;
+        //SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
         private void LydBeep()
         {
             if (lyd)
             {
-                sound.PlaySync();
+                SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
                 sound.PlaySync();
             }
             else
@@ -142,7 +143,7 @@ namespace SelvrappoteringsApp
         }
 
         private int _simpelCounter = 0;
-        private int _threshold = 5;
+        private int _threshold = 10;
 
         private void SimpelReminderTimer_Tick(object sender, EventArgs e)
         {
@@ -150,7 +151,7 @@ namespace SelvrappoteringsApp
 
             if (_simpelCounter == _threshold)
             {
-                _threshold += 15;
+                _threshold += 100;
 
                 LydBeep();
 
@@ -164,7 +165,6 @@ namespace SelvrappoteringsApp
 
             if (_andetState)
             {
-              
                 if (_simpelCounter == o)
                 {
                     AndetB.Enabled = true;
@@ -172,11 +172,92 @@ namespace SelvrappoteringsApp
                     _andetState = false;
                 }
             }
+            if (_spiseState)
+            {
+                if (_simpelCounter == o)
+                {
+                    SpiseB.Enabled = true;
+                    SpiseB.BackColor = Color.PaleTurquoise;
+                    _spiseState = false;
+                }
+            }
+            if (_soveState)
+            {
+                if (_simpelCounter == o)
+                {
+                    SoveB.Enabled = true;
+                    SoveB.BackColor = Color.PaleTurquoise;
+                    _soveState = false;
+                }
+            }
+            if (_toiletState)
+            {
+                if (_simpelCounter == o)
+                {
+                    ToiletB.Enabled = true;
+                    ToiletB.BackColor = Color.PaleTurquoise;
+                    _toiletState = false;
+                }
+            }
+            if (_SlappeAfState)
+            {
+                if (_simpelCounter == o)
+                {
+                    SlappeAfB.Enabled = true;
+                    SlappeAfB.BackColor = Color.PaleTurquoise;
+                    _SlappeAfState = false;
+                }
+            }
+            if (_AktivState)
+            {
+                if (_simpelCounter == o)
+                {
+                    AktivB.Enabled = true;
+                    AktivB.BackColor = Color.PaleTurquoise;
+                    _AktivState = false;
+                }
+            }
+            if (_medicinState)
+            {
+                if (_simpelCounter == o)
+                {
+                    MedicinB.Enabled = true;
+                    MedicinB.BackColor = Color.PaleTurquoise;
+                    _medicinState = false;
+                }
+            }
+            if (_PositionState)
+            {
+                if (_simpelCounter == o)
+                {
+                    PositionsskiftB.Enabled = true;
+                    PositionsskiftB.BackColor = Color.PaleTurquoise;
+                    _PositionState = false;
+                }
+            }
+            if (_KoncentrationsState)
+            {
+                if (_simpelCounter == o)
+                {
+                    KoncentrationB.Enabled = true;
+                    KoncentrationB.BackColor = Color.PaleTurquoise;
+                    _KoncentrationsState = false;
+                }
+            }
         }
+
+        private bool _spiseState = false;
 
         private void SpiseB_Click(object sender, EventArgs e)
         {
+            SpiseB.BackColor = Color.LightGray;
+            SpiseB.Enabled = false;
 
+            //Kode for at gemme i en fil:
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Spiser\t\t" + ";\tDate;" + DateTime.Now + "\n");
+
+            o = _simpelCounter + 10;
+            _spiseState = true;
         }
 
         private List<string> _AktivitetsList = new List<string>();
@@ -190,9 +271,9 @@ namespace SelvrappoteringsApp
             AndetB.Enabled = false;
 
             //Kode for at gemme i en fil:
-            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Andet " + "; Date;" + DateTime.Now + "\n");
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Andet\t\t" + ";\tDate;" + DateTime.Now + "\n");
 
-            o = _simpelCounter + 3;
+            o = _simpelCounter + 10;
             _andetState = true;
 
 
@@ -213,6 +294,97 @@ namespace SelvrappoteringsApp
                 //    fileReader.Close();
                 //}
 
+        }
+
+        private bool _soveState = false;
+        private void SoveB_Click(object sender, EventArgs e)
+        {
+            SoveB.BackColor = Color.LightGray;
+            SoveB.Enabled = false;
+
+            //Kode for at gemme i en fil:
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Sover\t\t" + ";\tDate;" + DateTime.Now + "\n");
+            o = _simpelCounter + 10;
+
+            _soveState = true;
+        }
+
+        private bool _toiletState = false;
+        private void ToiletB_Click(object sender, EventArgs e)
+        {
+            ToiletB.BackColor = Color.LightGray;
+            ToiletB.Enabled = false;
+
+            //Kode for at gemme i en fil:
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Toilet\t\t" + ";\tDate;" + DateTime.Now + "\n");
+            o = _simpelCounter + 10;
+
+            _toiletState = true;
+        }
+
+        private bool _SlappeAfState = false;
+        private void SlappeAfB_Click(object sender, EventArgs e)
+        {
+            SlappeAfB.BackColor = Color.LightGray;
+            SlappeAfB.Enabled = false;
+
+            //Kode for at gemme i en fil:
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Slapper af\t" + ";\tDate;" + DateTime.Now + "\n");
+            o = _simpelCounter + 10;
+
+            _SlappeAfState = true;
+        }
+
+        private bool _AktivState = false;
+        private void AktivB_Click(object sender, EventArgs e)
+        {
+            AktivB.BackColor = Color.LightGray;
+            AktivB.Enabled = false;
+
+            //Kode for at gemme i en fil:
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Aktiv\t\t" + ";\tDate;" + DateTime.Now + "\n");
+            o = _simpelCounter + 10;
+
+            _AktivState = true;
+        }
+
+        private bool _medicinState = false;
+        private void MedicinB_Click(object sender, EventArgs e)
+        {
+            MedicinB.BackColor = Color.LightGray;
+            MedicinB.Enabled = false;
+
+            //Kode for at gemme i en fil:
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Medicin\t\t" + ";\tDate;" + DateTime.Now + "\n");
+            o = _simpelCounter + 10;
+
+            _medicinState = true;
+        }
+
+        private bool _PositionState = false;
+        private void PositionsskiftB_Click(object sender, EventArgs e)
+        {
+            PositionsskiftB.BackColor = Color.LightGray;
+            PositionsskiftB.Enabled = false;
+
+            //Kode for at gemme i en fil:
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Positions skift\t" + ";\tDate;" + DateTime.Now + "\n");
+            o = _simpelCounter + 10;
+
+            _PositionState = true;
+        }
+
+        private bool _KoncentrationsState = false;
+        private void KoncentrationB_Click(object sender, EventArgs e)
+        {
+            KoncentrationB.BackColor = Color.LightGray;
+            KoncentrationB.Enabled = false;
+
+            //Kode for at gemme i en fil:
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "koncentrere sig\t" + ";\tDate;" + DateTime.Now + "\n");
+            o = _simpelCounter + 10;
+
+            _KoncentrationsState = true;
         }
     }
 }
