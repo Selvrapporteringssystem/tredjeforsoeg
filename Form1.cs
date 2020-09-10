@@ -151,7 +151,7 @@ namespace SelvrappoteringsApp
 
             if (_simpelCounter == _threshold)
             {
-                _threshold += 5;
+                _threshold += 15;
 
                 LydBeep();
 
@@ -165,9 +165,7 @@ namespace SelvrappoteringsApp
 
             if (_andetState)
             {
-                AndetB.BackColor = Color.LightGray;
-                AndetB.Enabled = false;
-
+              
                 if (_simpelCounter == o)
                 {
                     AndetB.Enabled = true;
@@ -189,6 +187,9 @@ namespace SelvrappoteringsApp
 
         private void AndetB_Click(object sender, EventArgs e)
         {
+            AndetB.BackColor = Color.LightGray;
+            AndetB.Enabled = false;
+
             //Kode for at gemme i en fil:
             File.AppendAllText("..\\Aktivitetslog.txt", "Andet " + "; Date;" + DateTime.Now + "\n");
 
