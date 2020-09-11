@@ -35,11 +35,11 @@ namespace SelvrappoteringsApp
 
         private void NyMaalingB_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
+            if (radioButton3.Checked == true)
             {
                 _SimpelReminder = true;
             }
-            else
+            else if (radioButton4.Checked == true)
             {
                 _SimpelReminder = false;
             }
