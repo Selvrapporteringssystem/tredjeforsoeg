@@ -112,9 +112,6 @@ namespace SelvrappoteringsApp
             LydB.Visible = false;
             LydlosB.Visible = true;
             lyd = false;
-
-            
-
         }
 
         private bool lyd = true;
@@ -245,9 +242,11 @@ namespace SelvrappoteringsApp
                 }
             }
         }
+        
+        private List<string> _AktivitetsList = new List<string>(); //Hvad bruges denne til?
+        private int o = 0;
 
         private bool _spiseState = false;
-
         private void SpiseB_Click(object sender, EventArgs e)
         {
             SpiseB.BackColor = Color.LightGray;
@@ -259,12 +258,8 @@ namespace SelvrappoteringsApp
             o = _simpelCounter + 10;
             _spiseState = true;
         }
-
-        private List<string> _AktivitetsList = new List<string>();
-
-        private int o = 0;
+        
         private bool _andetState = false;
-
         private void AndetB_Click(object sender, EventArgs e)
         {
             AndetB.BackColor = Color.LightGray;
