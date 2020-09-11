@@ -116,14 +116,15 @@ namespace SelvrappoteringsApp
 
         private bool lyd = true;
 
-        private SoundPlayer sound;
+        //private SoundPlayer sound;
         //SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
         private void LydBeep()
         {
             if (lyd)
             {
-                SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
-                sound.PlaySync();
+                //SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
+                //sound.PlaySync();
+                Console.Beep(700, 2000);
             }
             else
             {
@@ -252,6 +253,8 @@ namespace SelvrappoteringsApp
             SpiseB.BackColor = Color.LightGray;
             SpiseB.Enabled = false;
 
+            MessageBox.Show("Din aktivitet er gemt.");
+
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Spiser\t\t" + ";\tDate;" + DateTime.Now + "\n");
 
@@ -264,6 +267,8 @@ namespace SelvrappoteringsApp
         {
             AndetB.BackColor = Color.LightGray;
             AndetB.Enabled = false;
+
+            MessageBox.Show("Din aktivitet er gemt.");
 
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Andet\t\t" + ";\tDate;" + DateTime.Now + "\n");
@@ -297,6 +302,8 @@ namespace SelvrappoteringsApp
             SoveB.BackColor = Color.LightGray;
             SoveB.Enabled = false;
 
+            MessageBox.Show("Din aktivitet er gemt.");
+
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Sover\t\t" + ";\tDate;" + DateTime.Now + "\n");
             o = _simpelCounter + 10;
@@ -309,6 +316,8 @@ namespace SelvrappoteringsApp
         {
             ToiletB.BackColor = Color.LightGray;
             ToiletB.Enabled = false;
+
+            MessageBox.Show("Din aktivitet er gemt.");
 
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Toilet\t\t" + ";\tDate;" + DateTime.Now + "\n");
@@ -323,6 +332,8 @@ namespace SelvrappoteringsApp
             SlappeAfB.BackColor = Color.LightGray;
             SlappeAfB.Enabled = false;
 
+            MessageBox.Show("Din aktivitet er gemt.");
+
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Slapper af\t" + ";\tDate;" + DateTime.Now + "\n");
             o = _simpelCounter + 10;
@@ -335,6 +346,8 @@ namespace SelvrappoteringsApp
         {
             AktivB.BackColor = Color.LightGray;
             AktivB.Enabled = false;
+
+            MessageBox.Show("Din aktivitet er gemt.");
 
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Aktiv\t\t" + ";\tDate;" + DateTime.Now + "\n");
@@ -349,6 +362,8 @@ namespace SelvrappoteringsApp
             MedicinB.BackColor = Color.LightGray;
             MedicinB.Enabled = false;
 
+            MessageBox.Show("Din aktivitet er gemt.");
+
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Medicin\t\t" + ";\tDate;" + DateTime.Now + "\n");
             o = _simpelCounter + 10;
@@ -362,6 +377,8 @@ namespace SelvrappoteringsApp
             PositionsskiftB.BackColor = Color.LightGray;
             PositionsskiftB.Enabled = false;
 
+            MessageBox.Show("Din aktivitet er gemt.");
+
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "Positions skift\t" + ";\tDate;" + DateTime.Now + "\n");
             o = _simpelCounter + 10;
@@ -374,7 +391,9 @@ namespace SelvrappoteringsApp
         {
             KoncentrationB.BackColor = Color.LightGray;
             KoncentrationB.Enabled = false;
-            
+
+            MessageBox.Show("Din aktivitet er gemt.");
+
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "koncentrere sig\t" + ";\tDate;" + DateTime.Now + "\n");
             o = _simpelCounter + 10;
