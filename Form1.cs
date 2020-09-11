@@ -374,12 +374,14 @@ namespace SelvrappoteringsApp
         {
             KoncentrationB.BackColor = Color.LightGray;
             KoncentrationB.Enabled = false;
-
+            
             //Kode for at gemme i en fil:
             File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "koncentrere sig\t" + ";\tDate;" + DateTime.Now + "\n");
             o = _simpelCounter + 10;
 
             _KoncentrationsState = true;
         }
+
+
     }
 }
