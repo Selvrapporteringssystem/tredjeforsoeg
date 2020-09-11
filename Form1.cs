@@ -116,15 +116,13 @@ namespace SelvrappoteringsApp
 
         private bool lyd = true;
 
-        //private SoundPlayer sound;
-        //SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
+        private SoundPlayer sound;
         private void LydBeep()
         {
             if (lyd)
             {
-                //SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
-                //sound.PlaySync();
-                Console.Beep(700, 2000);
+                SoundPlayer sound = new SoundPlayer("/home/pi/APP/A-Tone-His_Self-1266414414.wav");
+                sound.PlaySync();
             }
             else
             {
