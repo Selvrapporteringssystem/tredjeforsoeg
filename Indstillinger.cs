@@ -18,8 +18,8 @@ namespace SelvrappoteringsApp
         public Indstillinger(Form1 form1)
         {
             InitializeComponent();
-            radioButton1.Checked = true;
-            radioButton3.Checked = true;
+            smartReminderTilRB.Checked = true;
+            SimpelReminderTilRB.Checked = true;
 
             _form1 = form1;
         }
@@ -35,11 +35,11 @@ namespace SelvrappoteringsApp
 
         private void NyMaalingB_Click(object sender, EventArgs e)
         {
-            if (radioButton3.Checked == true)
+            if (SimpelReminderTilRB.Checked == true)
             {
                 _SimpelReminder = true;
             }
-            else if (radioButton4.Checked == true)
+            else if (SimpelReminderFraRB.Checked == true)
             {
                 _SimpelReminder = false;
             }
