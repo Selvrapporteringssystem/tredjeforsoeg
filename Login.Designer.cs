@@ -40,16 +40,16 @@
             // BrugernavnTB
             // 
             this.BrugernavnTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrugernavnTB.Location = new System.Drawing.Point(337, 99);
+            this.BrugernavnTB.Location = new System.Drawing.Point(493, 171);
             this.BrugernavnTB.Name = "BrugernavnTB";
-            this.BrugernavnTB.Size = new System.Drawing.Size(233, 30);
+            this.BrugernavnTB.Size = new System.Drawing.Size(234, 30);
             this.BrugernavnTB.TabIndex = 0;
             this.BrugernavnTB.Text = "Admin";
             // 
             // LoginB
             // 
             this.LoginB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginB.Location = new System.Drawing.Point(341, 249);
+            this.LoginB.Location = new System.Drawing.Point(496, 322);
             this.LoginB.Name = "LoginB";
             this.LoginB.Size = new System.Drawing.Size(123, 62);
             this.LoginB.TabIndex = 1;
@@ -60,10 +60,10 @@
             // PasswordTB
             // 
             this.PasswordTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTB.Location = new System.Drawing.Point(337, 171);
+            this.PasswordTB.Location = new System.Drawing.Point(493, 244);
             this.PasswordTB.Name = "PasswordTB";
             this.PasswordTB.PasswordChar = '*';
-            this.PasswordTB.Size = new System.Drawing.Size(233, 30);
+            this.PasswordTB.Size = new System.Drawing.Size(234, 30);
             this.PasswordTB.TabIndex = 2;
             this.PasswordTB.Text = "VCRVCR";
             // 
@@ -71,7 +71,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(336, 67);
+            this.label1.Location = new System.Drawing.Point(492, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 29);
             this.label1.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(336, 139);
+            this.label2.Location = new System.Drawing.Point(492, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 29);
             this.label2.TabIndex = 4;
@@ -90,9 +90,9 @@
             // AnnullerB
             // 
             this.AnnullerB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnnullerB.Location = new System.Drawing.Point(341, 317);
+            this.AnnullerB.Location = new System.Drawing.Point(496, 390);
             this.AnnullerB.Name = "AnnullerB";
-            this.AnnullerB.Size = new System.Drawing.Size(123, 64);
+            this.AnnullerB.Size = new System.Drawing.Size(123, 65);
             this.AnnullerB.TabIndex = 5;
             this.AnnullerB.Text = "Annuller";
             this.AnnullerB.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(270, 200);
+            this.label3.Location = new System.Drawing.Point(426, 273);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(362, 29);
             this.label3.TabIndex = 6;
@@ -114,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1317, 711);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.AnnullerB);
             this.Controls.Add(this.label2);
@@ -124,6 +124,7 @@
             this.Controls.Add(this.BrugernavnTB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);

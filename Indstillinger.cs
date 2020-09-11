@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,7 @@ namespace SelvrappoteringsApp
             NyMaalingB.Enabled = false;
             _form1.EnableButtons(_Maaler, _SimpelReminder);
 
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "\nNY MÅLING " + "; Date;" + DateTime.Now + "\n");
         }
 
         private void AfslutMaalingB_Click(object sender, EventArgs e)
@@ -57,6 +59,8 @@ namespace SelvrappoteringsApp
             NyMaalingB.Enabled = true;
             AfslutMaalingB.Enabled = false;
             _form1.EnableButtons(_Maaler, _SimpelReminder);
+
+            File.AppendAllText("/home/pi/APP/Aktivitetslog.txt", "\nAFSLUTTER MÅLING " + "; Date;" + DateTime.Now + "\n");
         }
     }
 }
